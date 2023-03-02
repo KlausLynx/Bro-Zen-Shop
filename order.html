@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Klaus Lynx">
+    <meta name="description" content="About The Bro Zen Shop">
+    <title>Order BZS</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+
+<body onload="main()">
+    <header class="header">
+        <h1 class="header__h1">The Bro Zen Snack Shop</h1>
+        <nav class="header__nav">
+            <ul class="header__ul">
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="/#menu">Menu</a>
+                </li>
+                <li>
+                    <a href="hours.html">Hours</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <figure>
+            <img src="img/tacos_delicioso_1000x667.png" alt="Tacos Delicioso" title="Tacos Delicioso!" width="1000"
+                height="667">
+            <figcaption class="offscreen">
+                Try these Delicious Tacos
+            </figcaption>
+        </figure>
+    </section>
+
+    <main class="main">
+        <article id="order" class="main__article order">
+            <h2 class="order__h2">Place Your Order!!!</h2>
+                <form action="https://httpbin.org/get" method="get">
+                    <section class="options">
+                            <h3>Options</h3>
+                        <p class="order__p">
+                            <label for="coffee">Coffees</label>
+                            <input class="order__drinks" type="text" name="coffee" id="coffee" list="coffee-list">
+                            <datalist id="coffee-list">
+                                <option value="Espresso">
+                                <option value="Cappuccino">
+                                <option value="Latte">
+                                <option value="Iced Latte">
+                            </datalist>
+                        </p>
+                        
+                        <br>
+            
+                        <p class="order__p">
+                            <label for="tea">Tea</label>
+                            <input class="order__drinks" type="text" name="tea" id="tea" list="tea-list">
+                            <datalist id="tea-list">
+                                <option value="Oolong">
+                                <option value="Black">
+                                <option value="Green">
+                            </datalist>
+                        </p>
+            
+                        <br>
+            
+                        <p class="order__p">
+                            <label for="ice-cream">Ice-cream</label>
+                            <input class="order__drinks" type="text" name="ice-cream" id="ice-cream" list="ice-cream-list">
+                            <datalist id="ice-cream-list">
+                                <option value="Chocolate">
+                                <option value="Frozen Yogurt">
+                                <option value="Snow cream">
+                            </datalist>
+                        </p>
+            
+                        <br>    
+            
+                        <p class="order__p">
+                            <label for="fries">Fries</label>
+                            <input class="order__snacks" type="text" name="fries" id="fries" list="fries-list">
+                            <datalist id="fries-list">
+                                <option value="Sweet Potatoes">
+                                <option value="Curly">
+                                <option value="Regular">
+                            </datalist>
+                        </p>
+            
+                        <br>
+            
+                        <p class="order__p">
+                            <label for="burger">Burgers</label>
+                            <input class="order__snacks" type="text" name="burger" id="burger" list="burger-list">
+                            <datalist id="burger-list">
+                                <option value="Cheese">
+                                <option value="Chili">
+                                <option value="Onion">
+                            </datalist>
+                        </p>
+            
+                        <br>    
+            
+                        <p class="order__p">
+                            <label for="peanuts">Peanuts</label>
+                            <input class="order__snacks" type="text" name="peanut" id="peanut" list="peanut-list">
+                            <datalist id="peanut-list">
+                                <option value="Regular">
+                                <option value="Crunchy">
+                                <option value="Natural">
+                            </datalist>
+                        </p>
+            
+                        <br>
+            
+                        <p class="order__p">
+                            <label for="pizza">Pizzas</label>
+                            <input class="order__snacks" type="text" name="pizza" id="pizza" list="pizza-list">
+                            <datalist id="pizza-list">
+                                <option value="Pepperoni">
+                                <option value="Veggie">
+                                <option value="Hawaiian">
+                            </datalist>
+                        </p>
+            
+                        <br>
+            
+                        <p class="order__p">
+                            <label for="chips">Chips</label>
+                            <input class="order__snacks" type="text" name="chips" id="chips" list="chip-list">
+                            <datalist id="chip-list">
+                                <option value="Plantain">
+                                <option value="Pringles">
+                                <option value="Doritos">
+                            </datalist>
+                        </p>
+            
+                        <br>    
+            
+                        <p class="order__p">
+                            <label for="pretzels">Pretzels</label>
+                            <input class="order__snacks" type="text" name="pretzels" id="pretzels" list="pretzel-list">
+                            <datalist id="pretzel-list">
+                                <option value="Cheese">
+                                <option value="Cinnamon">
+                                <option value="apples">
+                                <option value="Basic twists">
+                                <option value="pretzel sticks">
+                                <option value="Nuggets">
+                            </datalist>
+                        </p>
+            
+                        <br>    
+            
+                        <p class="order__p">
+                            <label for="tacos">Tacos</label>
+                            <input class="order__snacks" type="text" name="tacos" id="tacos" list="tacos-list">
+                            <datalist id="tacos-list">
+                                <option value="Al Pastor">
+                                <option value="DE Carnitas">
+                                <option value="DE Chorizo">
+                                <option value="Pineapple Toppings">
+                                <option value="Avocado/guacamole Toppings">
+                                <option value="Cheese Toppings">
+                                <option value="Cilantro Toppings">
+                                <option value="Onion Toppings">
+                            </datalist>
+                        </p>
+            
+                        <br>
+                    </section>
+                    <div class="Qty">
+                        <h3>Quantity</h3>
+                        <p>
+                            <label for="quantity">Quantity</label>
+                                <input type="number" name="amount" id="amount" min="1" max="100" step="4">
+                        </p>
+
+                        <p>
+                            <label for="quantity">Quantity</label>
+                                <input type="number" name="amount" id="amount" min="1" max="100" step="4">
+                        </p>
+
+                        <p>
+                            <label for="quantity">Quantity</label>
+                                <input type="number" name="amount" id="amount" min="1" max="100" step="4">
+                        </p>
+
+                        <p>
+                            <label for="quantity">Quantity</label>
+                                <input type="number" name="amount" id="amount" min="1" max="100" step="4">
+                        </p>
+
+                        <p>
+                            <label for="quantity">Quantity</label>
+                                <input type="number" name="amount" id="amount" min="1" max="100" step="4">
+                        </p>
+
+                        <p>
+                            <label for="quantity">Quantity</label>
+                                <input type="number" name="amount" id="amount" min="1" max="100" step="4">
+                        </p>
+
+                        <p>
+                            <label for="quantity">Quantity</label>
+                                <input type="number" name="amount" id="amount" min="1" max="100" step="4">
+                        </p>
+
+                        <p>
+                            <label for="quantity">Quantity</label>
+                                <input type="number" name="amount" id="amount" min="1" max="100" step="4">
+                        </p>
+
+                        <p>
+                            <label for="quantity">Quantity</label>
+                                <input type="number" name="amount" id="amount" min="1" max="100" step="4">
+                        </p>
+
+                        <p>
+                            <label for="quantity">Quantity</label>
+                                <input type="number" name="amount" id="amount" min="1" max="100" step="4">
+                        </p>
+                    </div> 
+                    <div class="btn">
+                        <button class="order__button__reset" type="reset">Reset</button>
+                        <button class="order__button" type="submit" formaction="https://httpbin.org/post" formmethod="post">Submit</button> 
+                    </div>
+                </form>
+            <p class="center">
+                <a href="#">Back To Top</a>
+            </p>
+        </article>
+        </main>
+    </main>
+
+
+    <footer class="footer">
+        <p>
+            <span class="nowrap">Copyright &copy; <time id="year"></time></span>
+            <span class="nowrap">Bro Zen Shop</span>
+        </p>
+    </footer>
+</body>
+
+</html>
